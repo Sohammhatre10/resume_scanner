@@ -21,18 +21,18 @@ Before you begin, ensure you have met the following requirements:
 ## Installation
 
 1. Clone this repository:
-   ```
+   ```bash
    git clone https://github.com/yourusername/resume_scanner.git
    cd resume_scanner
    ```
 
 2. Install the required packages:
-   ```
+   ```bash
    pip install PyPDF2 python-docx langchain openai
    ```
 
 3. Set up your OpenAI API key as an environment variable:
-   ```
+   ```bash
    export OPENAI_API_KEY='your-api-key-here'
    ```
    Replace 'your-api-key-here' with your actual OpenAI API key.
@@ -44,11 +44,11 @@ To use Resume Scanner, follow these steps:
 1. Place your resume file (PDF or DOCX) in the project directory or remember its path.
 
 2. Run the script with the path to your resume file as an argument:
-   ```
+   ```bash
    python resume_scanner.py path/to/your/resume.pdf
    ```
    or
-   ```
+   ```bash
    python resume_scanner.py path/to/your/resume.docx
    ```
 
