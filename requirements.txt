@@ -1,8 +1,0 @@
-os
-openai
-PyPDF2
-json
-sys
-docx
-langchain_openai
-langchain
