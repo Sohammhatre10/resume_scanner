@@ -1,4 +1,0 @@
-groq
-PyPDF2
-python-docx
-langchain
