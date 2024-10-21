@@ -1,0 +1,7 @@
+llama_3.2
+llama-cpp-python 0.3.1
+jsons 1.6.3
+os-sys 2.1.4
+PyPDF2 3.0.1
+pdfreader 0.1.15
+python-docx 1.1.2
