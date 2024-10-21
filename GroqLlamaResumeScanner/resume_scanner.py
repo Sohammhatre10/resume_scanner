@@ -8,7 +8,7 @@ from groq import Groq
 import os
 
 client = Groq(
-    api_key="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",
+    api_key= "",
 )
 
 
