@@ -1,0 +1,4 @@
+mistralai
+PyPDF2
+python-docx
+langchain
