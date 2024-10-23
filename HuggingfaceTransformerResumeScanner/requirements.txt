@@ -1,0 +1,5 @@
+requests
+transformers
+huggingface_hub
+PyPDF2
+python-docx
