@@ -21,12 +21,14 @@ Before you begin, ensure you have met the following requirements:
 ## Installation
 
 1. Clone this repository:
+
    ```bash
    git clone https://github.com/yourusername/resume_scanner.git
    cd resume_scanner
    ```
 
 2. Install the required packages:
+
    ```bash
    pip install PyPDF2 python-docx langchain openai
    ```
@@ -44,10 +46,13 @@ To use Resume Scanner, follow these steps:
 1. Place your resume file (PDF or DOCX) in the project directory or remember its path.
 
 2. Run the script with the path to your resume file as an argument:
+
    ```bash
    python resume_scanner.py path/to/your/resume.pdf
    ```
+
    or
+
    ```bash
    python resume_scanner.py path/to/your/resume.docx
    ```
@@ -65,11 +70,7 @@ The output JSON will have the following structure:
   "education": [
     "Bachelor of Science in Computer Science, XYZ University, 2015-2019"
   ],
-  "skills": [
-    "Python",
-    "Machine Learning",
-    "Data Analysis"
-  ],
+  "skills": ["Python", "Machine Learning", "Data Analysis"],
   "experience": [
     "Software Engineer, ABC Corp, 2019-Present",
     "Intern, DEF Tech, Summer 2018"
@@ -83,7 +84,9 @@ The output JSON will have the following structure:
 
 ## Contributing
 
-Contributions to Resume Scanner are welcome. Please feel free to submit a Pull Request.
+Contributions to help improve the quality of the code and the application overall to Resume Scanner are welcome.
+
+To get involved, please [read our contribution guidelines](CONTRIBUTING.md) before creating an issue or a pull request. Thank you for your contributions and for being part of this project!
 
 ## License
 
