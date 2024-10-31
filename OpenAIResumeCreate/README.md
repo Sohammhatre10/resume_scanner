@@ -24,6 +24,4 @@ This project is a **dynamic resume generator** powered by **LangChain** and **Op
 ## Installation
 
 1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/your-username/resume-generator.git
-   cd resume-generator
+ 
