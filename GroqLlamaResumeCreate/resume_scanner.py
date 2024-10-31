@@ -2,6 +2,10 @@ import json
 import os
 import sys
 import docx
+from groq import Groq
+
+# Initialize Groq client
+client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
 def create_resume():
     """
@@ -48,7 +52,46 @@ def create_resume():
             break
         resume_data["certifications"].append(cert)
     
+    # Optionally enhance resume sections using Groq if API key is provided
+    if client.api_key:
+        print("Enhancing resume sections using Groq API...")
+        try:
+            enhanced_resume = enhance_resume_with_groq(resume_data)
+            if enhanced_resume:
+                resume_data = enhanced_resume
+        except Exception as e:
+            print(f"Error enhancing resume with Groq: {str(e)}")
+    
     return resume_data
+
+def enhance_resume_with_groq(data):
+    """
+    Enhance resume sections using the Groq API.
+
+    Args:
+    data (dict): Resume data to enhance.
+
+    Returns:
+    dict: Enhanced resume data.
+    """
+    response = client.chat.completions.create(
+        messages=[
+            {
+                "role": "user",
+                "content": f"Enhance the following resume details for clarity and impact:\n\n{json.dumps(data)}"
+            }
+        ],
+        model="llama-3.2-90b-vision-preview"
+    )
+    enhanced_text = response.choices[0].message.content
+
+    # Parse JSON output from the response
+    try:
+        enhanced_data = json.loads(enhanced_text)
+        return enhanced_data
+    except json.JSONDecodeError:
+        print("Failed to parse Groq response as JSON.")
+        return data
 
 def save_json_to_file(data, output_file):
     """
