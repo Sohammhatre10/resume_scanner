@@ -1,3 +1,5 @@
+from model import ResumeData
+
 def generate_resume_prompt(data: ResumeData, resume_type: str = "professional") -> str:
     # Base prompt with resume type instructions
     prompt = f"""
