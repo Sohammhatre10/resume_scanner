@@ -1,3 +1,6 @@
+from prompt import generate_resume_prompt
+from config import llm
+
 #resume_prompt = generate_resume_prompt(resume_data)
 
 # Example: Generate a professional resume
