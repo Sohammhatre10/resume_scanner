@@ -45,5 +45,5 @@ Work Experience:
     else:
         prompt += "\nGenerate the resume in a professional and structured format."
 
-    prompt += "\nProvide the resume in a polished and easy-to-read layout."
+    prompt += "\nProvide the resume in a polished and easy-to-read layout in .html format."
     return prompt
