@@ -1,5 +1,4 @@
 from langchain.llms import OpenAI
-import openai
 
-# Initialize OpenAI with your API key
-openai.api_key = "your_openai_api_key"
+# Initialize the OpenAI model with your API key
+llm = OpenAI(api_key="YOUR_OPENAI_API_KEY", model="text-davinci-003")  # Adjust model if needed
