@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume Scanner</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="landing-container">
+    <!-- Header Section -->
+    <header>
+      <h1>Welcome to Resume Scanner</h1>
+      <p>Optimize your resume to stand out to recruiters!</p>
+    </header>
+
+    <section class="upload-section">
+      <div class="upload-box">
+        <h2>Upload Your Resume</h2>
+        <p>Our AI will analyze your resume and provide improvement suggestions.</p>
+        <input type="file" id="resume-upload" accept=".pdf, .doc, .docx" />
+        <button onclick="uploadResume()">Scan Resume</button>
+      </div>
+    </section>
+
+    <section class="benefits-section">
+      <h2>Why Use Resume Scanner?</h2>
+      <ul>
+        <li>Get personalized feedback on your resume</li>
+        <li>Optimize for ATS (Applicant Tracking Systems)</li>
+        <li>Improve your chances of getting noticed</li>
+        <li>Free for limited scans</li>
+      </ul>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
