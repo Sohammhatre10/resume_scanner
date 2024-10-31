@@ -14,15 +14,27 @@
       <p>Optimize your resume to stand out to recruiters!</p>
     </header>
 
+    <!-- Upload Section -->
     <section class="upload-section">
       <div class="upload-box">
         <h2>Upload Your Resume</h2>
         <p>Our AI will analyze your resume and provide improvement suggestions.</p>
         <input type="file" id="resume-upload" accept=".pdf, .doc, .docx" />
+
+        <!-- AI Model Selection Dropdown -->
+        <label for="model-select">Choose AI Model:</label>
+        <select id="model-select">
+          <option value="chatgpt">ChatGPT</option>
+          <option value="claude">Claude</option>
+          <option value="mixtral">Mixtral</option>
+          <option value="ollama">Ollama</option>
+        </select>
+
         <button onclick="uploadResume()">Scan Resume</button>
       </div>
     </section>
 
+    <!-- Benefits Section -->
     <section class="benefits-section">
       <h2>Why Use Resume Scanner?</h2>
       <ul>
